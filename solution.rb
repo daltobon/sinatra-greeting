@@ -1,11 +1,10 @@
 require 'sinatra'
  	get '/' do
  	unless params[:name]
- 		@saludo = 'Hola desconocido!'
+ 		'<h1> Hola desconocido! </h1>"'
  	else
- 		@saludo = "Hola #{params[:name]}!"	
+ 		"<h1> Hola #{params[:name]}! </h1>"	
  	end	
-	erb :index	
 end	
 
 
