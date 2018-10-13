@@ -1,9 +1,10 @@
 require 'sinatra'
+
  	get '/' do
- 	unless params[:name]
- 		"<h1> Hola desconocido! </h1>"
+ 	if (params[:name]==nil || params[:name]=={} || params[:name]=="")
+ 		"<h1> hola desconocido! </h1>"
  	else
- 		"<h1> Hola #{params[:name]}! </h1>"	
+ 		"<h1> hola #{params[:name]}! </h1>"	
  	end	
 end	
 
