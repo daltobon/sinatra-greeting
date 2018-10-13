@@ -2,9 +2,9 @@ require 'sinatra'
 
  	get '/makers/:nombre' do
  	if (:nombre==nil || :nombre=={} || :nombre=="")
- 		"<h1> Hola desconocido! </h1>"
+ 		"<h1> hola desconocido! </h1>"
  	else
- 		"<h1> Hola #{params[:nombre]}! </h1>".capitalize	
+ 		"<h1> hola #{params[:nombre]}! </h1>".capitalize	
  	end	
 end	
 
